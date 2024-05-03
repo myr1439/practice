@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function testFunc(id){
+            let user_id = id || 'Guest'; //or연산자 --> 피연산자 둘 중 하나가 참이면 참
+
+            console.log(user_id)
+        }
+        testFunc("HongkiDong") //HongkiDong
+        testFunc() //Guest
+
+        //기본값(디폴트값)을 사용
+        function testFunc2(id="Guest"){
+            let user_id = id
+            console.log(user_id)
+        }
+        testFunc2("HongkiDong") //HongkiDong
+        testFunc2() //Guest
+    </script>
+</body>
+</html>
